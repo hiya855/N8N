@@ -3,7 +3,7 @@ const { verifyKeyMiddleware } = require('discord-interactions');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const DISCORD_PUBLIC_KEY = process.env.1aa3c8e85ae40a13380eaabf416db8ba260c0e3972b746f5011d8b19ee8468e1;
+const DISCORD_PUBLIC_KEY = process.env.DISCORD_PUBLIC_KEY;
 
 app.use(express.json({
   verify: (req, res, buf) => {
